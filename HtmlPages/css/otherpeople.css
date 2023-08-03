@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+
+:root{
+    --color5: #fff9f4;
+    --color4: #78c059;
+    --color3: #002254; /*header*/
+    --color2: #EFEFEF; /* background*/
+    --color1: #001634;
+}
+
+.dark-theme{
+    --color1: rgb(66, 66, 66);
+    --color2: rgba(42,39,40);
+    --color3: rgba(32,31,30);
+    --color4: #78c059;
+    --color5: #d0d0d0;
+}
+#light_mode{
+    color: var(--color4);
+    cursor: pointer;
+}
+#dark_mode{
+    color: var(--color4);
+    cursor: pointer;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: var(--color2);
+    color: var(--color7);
+    width: 100%;
+}
+
+main{
+    display: flex;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+h1{
+    font-size: 2em;
+    margin: 0;
+    color: var(--color2);
+    -webkit-text-stroke:1px var(--color4);
+    padding: 10px;
+}
+.header__logo{
+    margin-left: 10px;
+    height: 30px;
+}
+
+header{
+    background-color: var(--color3);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1:hover{
+    cursor: pointer;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+header nav ul li img{
+    height: 20px;
+}
+header nav ul span{
+    margin-right: 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--color4);
+}
+.aboutus{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+aside{
+    display: flex;
+    height: 450px;
+    width: 250px;
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--color1);
+    background-color: var(--color5);
+    margin-right: 50px;
+    margin-top: 20px;
+    border-top:5px solid var(--color3);
+    box-shadow: -10px -10px 15px rgba(152, 150, 150, 0.282),
+    10px 10px 15px rgba(70, 70, 70, 0.15);
+}
+
+.aside__active{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: var(--color1) 2px solid;
+    border-inline: var(--color5);
+    padding: 20px;
+    cursor: pointer;
+
+}
+.aside__active img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+
+}
+.aside__deactive{
+    cursor: pointer;
+}
+.aside__requestcount{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#friendrequestcount{
+    text-align: center;
+    border-radius: 40%;
+    background-color: var(--color1);
+    color: var(--color2);
+    min-width: 20px;
+}
+h2{
+    color: var(--color1);
+}
+
+.logout{
+    width: 90px;
+    height: 40px;
+    color: var(--color5);
+    background-color: var(--color3);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.logout:hover,
+.logout:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--color3);
+    transform: translateY(-0.25em);
+    background-color: var(--color4);
+}
+
+
+#profilecart{
+    margin-top: 30px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.containerrr {
+    display: flex;
+    font-family: "Sofia", sans-serif;
+    background-color: var(--color5);
+    border-radius: 20px;
+    width: 375px;
+    height: 165px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: -10px -10px 15px rgba(152, 150, 150, 0.282),
+    10px 10px 15px rgba(70, 70, 70, 0.15);
+}
+
+.photo__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photo__text img {
+    margin-left: 10px;
+    width: 90px;
+    height:90px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.textt{
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+.textt h4,h5{
+    padding-right: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.btn {
+    border: none;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 11px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 10px;
+}
+.btn-orange {
+    background: #dc5c00;
+    color: white;
+}
+.btn-pink {
+    background: #b82151;
+    color: white;
+}
+.btn-blue {
+    background: rgb(0,149,246);
+    color: white;
+}
+.btn-green {
+    background: rgba(18, 140, 8, 0.78);
+    color: #ffffff;
+}
+.btn-gray{
+    background: rgba(206, 203, 203, 0.6);
+    color: #000000;
+}
+
+.btn:hover{
+    background-color: rgb(109, 83, 201);
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+

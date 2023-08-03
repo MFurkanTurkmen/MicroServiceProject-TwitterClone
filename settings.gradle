@@ -1,0 +1,9 @@
+rootProject.name = 'SocialMedia_Pawer'
+include 'AuthMicroService'
+include 'UserMicroService'
+include 'PostMicroService'
+include 'ApiGateway'
+include 'ConfigServer'
+include 'ElasticServicePosts'
+include 'ConfigServerGit'
+
